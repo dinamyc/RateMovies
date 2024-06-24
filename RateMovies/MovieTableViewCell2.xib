@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieTableViewCell" customModule="RateMovies" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MovieTableViewCell" id="iN0-l3-epB" customClass="MovieTableViewCell" customModule="RateMovies" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="452" height="198"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieTableViewCell" id="mo0-DT-tC2" customClass="MovieTableViewCell" customModule="RateMovies" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="404" width="393" height="43.666667938232422"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mo0-DT-tC2" id="sKg-st-5jr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yck-3C-kSD">
+                                <rect key="frame" x="16" y="5.3333333333333321" width="33" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="33" id="PEF-xG-tNQ"/>
+                                    <constraint firstAttribute="height" constant="33" id="b3J-L4-BR8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QtH-2B-BIg">
+                                <rect key="frame" x="80" y="11.333333333333336" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qc-y1-ZLP">
+                                <rect key="frame" x="166" y="11.333333333333336" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Yck-3C-kSD" firstAttribute="leading" secondItem="sKg-st-5jr" secondAttribute="leading" constant="16" id="56t-3W-vyU"/>
+                            <constraint firstItem="2qc-y1-ZLP" firstAttribute="centerY" secondItem="sKg-st-5jr" secondAttribute="centerY" id="Dt1-wJ-qbt"/>
+                            <constraint firstItem="Yck-3C-kSD" firstAttribute="centerY" secondItem="sKg-st-5jr" secondAttribute="centerY" id="HKk-zr-794"/>
+                            <constraint firstItem="2qc-y1-ZLP" firstAttribute="trailing" secondItem="QtH-2B-BIg" secondAttribute="trailing" constant="86" id="aT2-4n-qSV"/>
+                            <constraint firstItem="QtH-2B-BIg" firstAttribute="centerY" secondItem="sKg-st-5jr" secondAttribute="centerY" id="cLV-XR-tP9"/>
+                            <constraint firstItem="QtH-2B-BIg" firstAttribute="leading" secondItem="Yck-3C-kSD" secondAttribute="leading" constant="64" id="ir9-gh-cix"/>
+                        </constraints>
+                    </tableViewCellContentView>
+                    <connections>
+                        <outlet property="movieImageView" destination="Yck-3C-kSD" id="JbK-HT-y3K"/>
+                        <outlet property="releaseDateLabel" destination="2qc-y1-ZLP" id="zsy-Gg-2fa"/>
+                        <outlet property="titleLabel" destination="QtH-2B-BIg" id="BNw-Xm-1Pe"/>
+                    </connections>
+                </tableViewCell>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="82.44274809160305" y="154.92957746478874"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
